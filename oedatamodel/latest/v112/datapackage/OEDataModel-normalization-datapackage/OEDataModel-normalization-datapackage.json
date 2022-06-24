@@ -47,13 +47,14 @@
     {"title": "jh-RLI", "email": null, "date": "2020-08-11", "object": "datapackage", "comment": "Create template datapackage for oedatamodel"},
     {"title": "jh-RLI", "email": null, "date": "2020-10-08", "object": "metadata", "comment": "Fix links to documentation and source code"},
     {"title": "jh-RLI", "email": null, "date": "2020-11-08", "object": "metadata", "comment": "Update Ressources"},
-    {"title": "henhuy", "email": null, "date": "2022-06-11", "object": "datapackage", "comment": "Implement bandwidths in ressources"}
+    {"title": "henhuy", "email": null, "date": "2022-06-11", "object": "datapackage", "comment": "Implement bandwidths in ressources"},
+    {"title": "henhuy", "email": null, "date": "2022-06-24", "object": "datapackage", "comment": "SEDOS oedatamodel"}
   ],
   "resources": [
     {
       "profile": "tabular-data-resource",
-      "name": "model_draft.oed_scenario",
-      "path": "https://openenergy-platform.org/dataedit/view/model_draft/_prefix_oed_scenario",
+      "name": "model_draft.sedos_scenario",
+      "path": "https://openenergy-platform.org/dataedit/view/model_draft/_prefix_sedos_scenario",
       "format": "PostgreSQL",
       "encoding" : "UTF-8",
       "schema": {
@@ -75,8 +76,8 @@
     },
     {
       "profile": "tabular-data-resource",
-      "name": "model_draft.oed_scalar_instance",
-      "path": "https://openenergy-platform.org/dataedit/view/model_draft/_prefix_oed_scalar_instance",
+      "name": "model_draft.sedos_scalar_instance",
+      "path": "https://openenergy-platform.org/dataedit/view/model_draft/_prefix_sedos_scalar_instance",
       "format": "PostgreSQL",
       "encoding" : "UTF-8",
       "schema": {
@@ -91,14 +92,14 @@
           {
             "fields": ["scenario_id"],
             "reference": {
-              "resource": "model_draft.oed_scenario",
+              "resource": "model_draft.sedos_scenario",
               "fields": ["id"]
             }
           },
           {
             "fields": ["scalar_id"],
             "reference": {
-              "resource": "model_draft.oed_scalar",
+              "resource": "model_draft.sedos_scalar",
               "fields": ["id"]
             }
           }
@@ -111,8 +112,8 @@
     },
     {
       "profile": "tabular-data-resource",
-      "name": "model_draft.oed_timeseries_instance",
-      "path": "https://openenergy-platform.org/dataedit/view/model_draft/_prefix_oed_timeseries_instance",
+      "name": "model_draft.sedos_timeseries_instance",
+      "path": "https://openenergy-platform.org/dataedit/view/model_draft/_prefix_sedos_timeseries_instance",
       "format": "PostgreSQL",
       "encoding" : "UTF-8",
       "schema": {
@@ -126,14 +127,14 @@
           {
             "fields": ["scenario_id"],
             "reference": {
-              "resource": "model_draft.oed_scenario",
+              "resource": "model_draft.sedos_scenario",
               "fields": ["id"]
             }
           },
           {
             "fields": ["timeseries_id"],
             "reference": {
-              "resource": "model_draft.oed_timeseries",
+              "resource": "model_draft.sedos_timeseries",
               "fields": ["id"]
             }
           }
@@ -146,8 +147,8 @@
     },
     {
       "profile": "tabular-data-resource",
-      "name": "model_draft.oed_data",
-      "path": "https://openenergy-platform.org/dataedit/view/model_draft/_prefix_oed_data",
+      "name": "model_draft.sedos_data",
+      "path": "https://openenergy-platform.org/dataedit/view/model_draft/_prefix_sedos_data",
       "format": "PostgreSQL",
       "encoding" : "UTF-8",
       "schema": {
@@ -175,8 +176,8 @@
     },
 
     {"profile": "tabular-data-resource",
-      "name": "model_draft.oed_scalar",
-      "path": "https://openenergy-platform.org/dataedit/view/model_draft/_prefix_oed_scalar",
+      "name": "model_draft.sedos_scalar",
+      "path": "https://openenergy-platform.org/dataedit/view/model_draft/_prefix_sedos_scalar",
       "format": "PostgreSQL",
       "encoding" : "UTF-8",
       "schema": {
@@ -191,7 +192,7 @@
           {
             "fields": ["id"],
             "reference": {
-              "resource": "model_draft.oed_data",
+              "resource": "model_draft.sedos_data",
               "fields": ["id"]
             }
           }
@@ -204,8 +205,8 @@
     },
     {
       "profile": "tabular-data-resource",
-      "name": "model_draft.oed_timeseries",
-      "path": "https://openenergy-platform.org/dataedit/view/model_draft/_prefix_oed_timeseries",
+      "name": "model_draft.sedos_timeseries",
+      "path": "https://openenergy-platform.org/dataedit/view/model_draft/_prefix_sedos_timeseries",
       "format": "PostgreSQL",
       "encoding" : "UTF-8",
       "schema": {
@@ -220,7 +221,7 @@
           {
             "fields": ["id"],
             "reference": {
-              "resource": "model_draft.oed_data",
+              "resource": "model_draft.sedos_data",
               "fields": ["id"]
             }
           }
