@@ -112,15 +112,15 @@
     },
     {
       "profile": "tabular-data-resource",
-      "name": "model_draft.sedos_timeseries_instance",
-      "path": "https://openenergy-platform.org/dataedit/view/model_draft/_prefix_sedos_timeseries_instance",
+      "name": "model_draft.sedos_ts_instance",
+      "path": "https://openenergy-platform.org/dataedit/view/model_draft/_prefix_sedos_ts_instance",
       "format": "PostgreSQL",
       "encoding" : "UTF-8",
       "schema": {
         "fields": [
           {"name": "id", "description": "Unique identifier", "type": "bigint", "unit": null},
           {"name": "scenario_id", "description": "Scenario", "type": "bigint", "unit": null},
-          {"name": "timeseries_id", "description": "Scalar", "type": "bigint", "unit": null}
+          {"name": "timeseries_id", "description": "Timeseries", "type": "bigint", "unit": null}
         ],
         "primaryKey": ["id"],
         "foreignKeys": [
@@ -216,7 +216,7 @@
           {"name": "timeindex_stop", "description": "Stop timestemp", "type": "timestamp", "unit": null},
           {"name": "timeindex_resolution", "description": "Timesteps", "type": "interval", "unit": null},
           {"name": "series", "description": "Timesteps", "type": "float array", "unit": null} ],
-        "primaryKey": ["data_id"],
+        "primaryKey": ["id"],
         "foreignKeys": [
           {
             "fields": ["id"],
