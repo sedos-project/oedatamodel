@@ -35,7 +35,7 @@
           {"name": "id", "description": "Unique identifier", "type": "integer", "unit": null},
           {"name": "scenario_id", "description": "Scenario", "type": "integer", "unit": null},
           {"name": "scalar_id", "description": "Scalar", "type": "integer", "unit": null},
-          {"name": "value", "description": "Value", "type": "number", "unit": null}
+          {"name": "value", "description": "Value", "type": "number", "floatNumber": "True", "unit": null}
         ],
         "primaryKey": ["id"],
         "foreignKeys": [
@@ -43,13 +43,6 @@
             "fields": ["scenario_id"],
             "reference": {
               "resource": "sedos_scenario",
-              "fields": ["id"]
-            }
-          },
-          {
-            "fields": ["scalar_id"],
-            "reference": {
-              "resource": "sedos_scalar",
               "fields": ["id"]
             }
           }
@@ -78,13 +71,6 @@
             "fields": ["scenario_id"],
             "reference": {
               "resource": "sedos_scenario",
-              "fields": ["id"]
-            }
-          },
-          {
-            "fields": ["timeseries_id"],
-            "reference": {
-              "resource": "sedos_timeseries",
               "fields": ["id"]
             }
           }
