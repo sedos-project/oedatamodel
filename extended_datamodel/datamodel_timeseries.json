@@ -1,0 +1,103 @@
+{
+  "name": "Parameter Datamodel",
+  "title": "SEDOS datamodel for secondary input scalars",
+  "id": null,
+  "description": "datamodel, metadata and examples provided as datapackage",
+  "language": ["en-GB"],
+  "subject": [],
+  "keywords": ["datamodel", "datapackage", "general energy dataformat"],
+  "publicationDate": "2022-07-13",
+  "context": {
+    "homepage": "https://sedos-project.github.io/.github/",
+    "documentation": "https://sedos-project.github.io/.github/",
+    "sourceCode": "https://github.com/sedos-project/oedatamodel/tree/main/extended_datamodel",
+    "contact": null,
+    "grantNo": null,
+    "fundingAgency": null,
+    "fundingAgencyLogo": null,
+    "publisherLogo": null
+  },
+  "spatial": {
+    "location": null,
+    "extent": null,
+    "resolution": null
+  },
+  "temporal": {
+    "referenceDate": null,
+    "timeseries": []
+  },
+  "sources": [
+    {
+      "title": "Extended datamodel",
+      "description": "Extended data model for secondary input scalars",
+      "path": "https://github.com/sedos-project/oedatamodel/tree/main/extended_datamodel",
+      "licenses": [
+        {
+          "name": "CC0-1.0",
+          "title": "Creative Commons Zero v1.0 Universal",
+          "path": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+          "instruction": "You are free: To Share, To Create, To Adapt",
+          "attribution": "© Reiner Lemoine Institut"
+        }
+      ]
+    }
+  ],
+  "licenses": [],
+  "contributors": [
+    {"title": "henhuy", "email": null, "date": "2022-07-13", "object": "datapackage", "comment": "Create template datapackage for extended datamodel"}
+  ],
+  "resources": [
+    {
+      "profile": "tabular-data-resource",
+      "name": "model_draft.sedos_ap_data",
+      "path": "https://openenergy-platform.org/dataedit/view/model_draft/_prefix_sedos_ap_data",
+      "format": "PostgreSQL",
+      "encoding" : "UTF-8",
+      "schema": {
+        "fields": [
+          {"name": "id", "description": "Unique identifier", "type": "bigint", "unit": null, "isAbout": [], "valueReference": []},
+          {"name": "region", "description": "Country or regionx", "type": "text", "unit": null, "isAbout": [], "valueReference": []},
+          {"name": "timeindex_start", "description": "Start timestamp", "type": "timestamp", "unit": null, "isAbout": [], "valueReference": []},
+          {"name": "timeindex_stop", "description": "Stop timestamp", "type": "timestamp", "unit": null, "isAbout": [], "valueReference": []},
+          {"name": "timeindex_resolution", "description": "Timesteps", "type": "interval", "unit": null, "isAbout": [], "valueReference": []},
+          {"name": "series1", "description": "Series #1", "type": "float array", "unit": null, "isAbout": [], "valueReference": []},
+          {"name": "series2", "description": "Series #2", "type": "float array", "unit": null, "isAbout": [], "valueReference": []},
+          {"name": "method", "description": "Method", "type": "json", "unit": null, "isAbout": [], "valueReference": []},
+          {"name": "source", "description": "Source", "type": "json", "unit": null, "isAbout": [], "valueReference": []},
+          {"name": "version", "description": "Version", "type": "text", "unit": null, "isAbout": [], "valueReference": []},
+          {"name": "comment", "description": "Comment", "type": "text", "unit": null, "isAbout": [], "valueReference": []}
+        ],
+        "primaryKey": ["id"],
+        "foreignKeys": []
+      },
+      "dialect": {
+        "delimiter": ";",
+        "decimalSeparator": "."
+      }
+    }
+  ],
+  "@id": null,
+  "@context": null,
+  "review": {
+    "path": null,
+    "badge": null
+  },
+  "metaMetadata": {
+    "metadataVersion": "oemetadata_v1.5.1",
+    "metadataLicense": {
+      "name": "CC0-1.0",
+      "title": "Creative Commons Zero v1.0 Universal",
+      "path": "https://creativecommons.org/publicdomain/zero/1.0/"
+    }
+  },
+  "_comment": {
+    "metadata": "Metadata documentation and explanation (https://github.com/OpenEnergyPlatform/oemetadata)",
+    "dates": "Dates and time must follow the ISO8601 including time zone (YYYY-MM-DD or YYYY-MM-DDThh:mm:ss±hh)",
+    "units": "Use a space between numbers and units (100 m)",
+    "languages": "Languages must follow the IETF (BCP47) format (en-GB, en-US, de-DE)",
+    "licenses": "License name must follow the SPDX License List (https://spdx.org/licenses/)",
+    "review": "Following the OEP Data Review (https://github.com/OpenEnergyPlatform/data-preprocessing/blob/master/data-review/manual/review_manual.md)",
+    "null": "If not applicable use: null",
+    "todo": "If a value is not yet available, use: todo"
+  }
+}

@@ -8,13 +8,13 @@ and the versioning aim to respect [Semantic Versioning](http://semver.org/spec/v
 Here is a template for new release sections
 
 ```
-## Current
+## [Unreleased]
 
 ### Added
 -
 ### Changed
 -
-### Removed
+### Fixed
 -
 
 ## [_._._] - 20XX-MM-DD
@@ -23,21 +23,29 @@ Here is a template for new release sections
 -
 ### Changed
 -
-### Removed
+### Fixed
 -
 ```
-## Current
 
-### [1.1.1]
-- include feedback from open_MODEX project meeting in [PR#], this includes:
-    - changing scenarion.region type to json
-    - timeseries fix typos in description fields
-    - scalar.region updating description field
-    - updated ERM´s 
+## [1.1.2]
 
 ### Added
+- extended datamodel for SEDOS
+- bandwidths for scalars
 
 ### Changed
+- scenario-data relationship to n:m 
+
+
+## [1.1.1]
+
+### Changed
+- scenario.region type to json
+
+### Fixed
+- timeseries typos in description fields
+- scalar.region description field
+- updated ERM´s
 
 
 ## [1.1.0] 
