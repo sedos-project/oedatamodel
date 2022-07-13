@@ -49,8 +49,8 @@
   "resources": [
     {
       "profile": "tabular-data-resource",
-      "name": "model_draft.sedos_ap_data",
-      "path": "https://openenergy-platform.org/dataedit/view/model_draft/_prefix_sedos_ap_data",
+      "name": "model_draft.sedos_extended_scalars",
+      "path": "https://openenergy-platform.org/dataedit/view/model_draft/sedos_extended_scalars",
       "format": "PostgreSQL",
       "encoding" : "UTF-8",
       "schema": {
