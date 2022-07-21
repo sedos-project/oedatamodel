@@ -62,6 +62,7 @@
           {"name": "timeindex_resolution", "description": "Timesteps", "type": "interval", "unit": null, "isAbout": [], "valueReference": []},
           {"name": "series1", "description": "Series #1", "type": "float array", "unit": null, "isAbout": [], "valueReference": []},
           {"name": "series2", "description": "Series #2", "type": "float array", "unit": null, "isAbout": [], "valueReference": []},
+		  {"name": "version", "description": "Version", "type": "json", "unit": null, "isAbout": [], "valueReference": []},
           {"name": "method", "description": "Method", "type": "json", "unit": null, "isAbout": [], "valueReference": []},
           {"name": "source", "description": "Source", "type": "json", "unit": null, "isAbout": [], "valueReference": []},
           {"name": "version", "description": "Version", "type": "text", "unit": null, "isAbout": [], "valueReference": []},
