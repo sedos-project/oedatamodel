@@ -10,7 +10,7 @@
   "context": {
     "homepage": "https://sedos-project.github.io/.github/",
     "documentation": "https://sedos-project.github.io/.github/",
-    "sourceCode": "https://github.com/sedos-project/oedatamodel/tree/main/extended_datamodel",
+    "sourceCode": "https://github.com/sedos-project/oedatamodel/tree/main/parameter_datamodel",
     "contact": null,
     "grantNo": null,
     "fundingAgency": null,
@@ -28,9 +28,9 @@
   },
   "sources": [
     {
-      "title": "Extended datamodel",
-      "description": "Extended data model for secondary input scalars",
-      "path": "https://github.com/sedos-project/oedatamodel/tree/main/extended_datamodel",
+      "title": "Parameter datamodel",
+      "description": "Parameter data model for secondary input scalars and timeseries",
+      "path": "https://github.com/sedos-project/oedatamodel/tree/main/parameter_datamodel",
       "licenses": [
         {
           "name": "CC0-1.0",
@@ -44,13 +44,14 @@
   ],
   "licenses": [],
   "contributors": [
-    {"title": "henhuy", "email": null, "date": "2022-07-13", "object": "datapackage", "comment": "Create template datapackage for extended datamodel"}
+    {"title": "henhuy", "email": null, "date": "2022-07-13", "object": "datapackage", "comment": "Create template datapackage for extended datamodel"},
+    {"title": "chrwm", "email": null, "date": "2022-07-28", "object": "datapackage", "comment": "Rename datamodel"}
   ],
   "resources": [
     {
       "profile": "tabular-data-resource",
-      "name": "model_draft.sedos_extended_scalars",
-      "path": "https://openenergy-platform.org/dataedit/view/model_draft/sedos_extended_scalars",
+      "name": "model_draft.sedos_parameter_scalars",
+      "path": "https://openenergy-platform.org/dataedit/view/model_draft/sedos_parameter_scalars",
       "format": "PostgreSQL",
       "encoding" : "UTF-8",
       "schema": {
