@@ -65,7 +65,6 @@
 		  {"name": "version", "description": "Version", "type": "json", "unit": null, "isAbout": [], "valueReference": []},
           {"name": "method", "description": "Method", "type": "json", "unit": null, "isAbout": [], "valueReference": []},
           {"name": "source", "description": "Source", "type": "json", "unit": null, "isAbout": [], "valueReference": []},
-          {"name": "version", "description": "Version", "type": "text", "unit": null, "isAbout": [], "valueReference": []},
           {"name": "comment", "description": "Comment", "type": "text", "unit": null, "isAbout": [], "valueReference": []}
         ],
         "primaryKey": ["id"],
