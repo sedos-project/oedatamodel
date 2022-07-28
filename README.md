@@ -159,6 +159,32 @@ Origin data model: [OEDataModel-concrete](https://github.com/OpenEnergyPlatform/
 | 3                    | ToDo         | ['North']  | ToDo      | ToDo       | ToDo         |
 | ...                  | ...          | ...        | ...       | ...        | ...          |
 
+### Bandwidth types and cell methods
+
+[cfconventions](https://cfconventions.org/Data/cf-conventions/cf-conventions-1.9/cf-conventions.pdf#page=143) for cell methods are used and extended, for the columns <u>bandwidth_type</u> and <u>method</u>.
+
+| cell_methods           | Description                                                                                                                                                                         | Source      |
+|------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| point                  | The data values are representative of points in space or time (instantaneous). This is the default method for a quantity that is intensive with respect to the specified dimension. | NetCDF_v1.9 |
+| sum                    | The data values are representative of a sum or accumulation over the cell. This is the default method for a quantity that is extensive with respect to the specified dimension.     | NetCDF_v1.9 |
+| maximum                | Maximum                                                                                                                                                                             | NetCDF_v1.9 |
+| maximum_absolute_value | Maximum absolute value                                                                                                                                                              | NetCDF_v1.9 |
+| median                 | Median                                                                                                                                                                              | NetCDF_v1.9 |
+| mid_range              | Average of maximum and minimum                                                                                                                                                      | NetCDF_v1.9 |
+| minimum                | Minimum                                                                                                                                                                             | NetCDF_v1.9 |
+| minimum_absolute_value | Minimum absolute value                                                                                                                                                              | NetCDF_v1.9 |
+| mean                   | Mean (average value)                                                                                                                                                                | NetCDF_v1.9 |
+| mean_absolute_value    | Mean absolute value                                                                                                                                                                 | NetCDF_v1.9 |
+| mean_of_upper_decile   | Mean of the upper group of  data values defined by the upper tenth of their distribution                                                                                            | NetCDF_v1.9 |
+| mode                   | Mode (most common value)                                                                                                                                                            | NetCDF_v1.9 |
+| range                  | Absolute difference between maximum and minimum                                                                                                                                     | NetCDF_v1.9 |
+| root_mean_square       | Root mean square (RMS)                                                                                                                                                              | NetCDF_v1.9 |
+| standard_deviation     | Standard deviation                                                                                                                                                                  | NetCDF_v1.9 |
+| sum_of_squares         | Sum of squares                                                                                                                                                                      | NetCDF_v1.9 |
+| variance               | Variance                                                                                                                                                                            | NetCDF_v1.9 |
+| 1_sigma                | example of SEDOS-specific cell method                                                                                                                                               | SEDOS       |
+| gauss                  | example of SEDOS-specific cell method                                                                                                                                               | SEDOS       |
+
 
 
 ### Scalar description
