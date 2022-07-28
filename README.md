@@ -18,7 +18,7 @@ The version available there offers the user 2 ERM's. The ERM "OEDataModel-normal
 that can be implemented on a database (e.g. postgresql). Here tables, relations, column names and 
 data types are provided. The ERM "OEDataModel-concrete.pdf" is provided additionally and is designed 
 to simplify the editing of the data by a user. It also provides tables and relations as well as column 
-names and datatypes, but the tables are in a less normalized format. We recommend this version of the 
+names and datatypes, but the tables are in a less normalized format. We recommend this v~~~~ersion of the 
 data model for the implementation in e.g. csv tables because the advantage of the more human usable format 
 is not optimal for the technical usage in a database. 
 
@@ -45,6 +45,12 @@ Oemetadata provides a [detailed description](https://github.com/OpenEnergyPlatfo
 # Oedatamodel - Usage
 
 ## OEDataModel variations
+
+- OEDataModel-parameter
+    - Main usage as CSV files
+    - Optimized for user-friendly documentation of parameters for energy systems modelling
+    - Tool that maps the parameter model to the concrete and/or normalization model will be provided. Please be aware about new features.
+
 - OEDataModel-concrete
     - Main usage as CSV files
     - Tool that maps the concrete model to the normalization model will be provided. Please be aware about new features.
@@ -86,6 +92,47 @@ In short:
 
 ## Description and examples
 
+### OEDataModel-parameter
+
+### Scalar description
+
+| **Field**         |  **Datatype** | **Description**            |
+|-------------------|---------------|----------------------------|
+|   id              |     int       | A primary key is a field or set of fields that uniquely identifies each row in the table. It's recorded as a list of strings, since it is possible to define the primary key as made up of several columns.                           |
+|   region          |     text      | It describes the geographical scope of the dataset.                           |
+|   year            |     int       | It describes the time frame of the dataset.                           |
+|   parameter1      |     float array| First column for parameter input (unlimited additional parameter columns can be added)                          |
+|   parameter2      |     float array| Second Column for parameter input (unlimited additional parameter columns can be added)                           |
+|   bandwidth_type  |     json       | It describes the bandwidths type of the values in the parameter columns.                           |
+|   version         |     json       | It describes the version of the values in the parameter columns.                           |
+|   method          |     json      | It describes the procedure for obtaining the value, in case it does not originate from a single source.                           |
+|   source          |     json      | Human readable title of the source, e.g. document title or organisation name. The source must relate to a source provided in the oemetadata (datapackage) file.                           |
+|   comment         |     json      | Free text comment on what's been done.  
+
+For more information see: scalar [datapackage](https://github.com/sedos-project/oedatamodel/blob/main/extended_datamodel/datamodel_scalars.json)
+
+### Timeseries description
+
+| **Field**         |  **Datatype** | **Description**            |
+|-------------------|---------------|----------------------------|
+|   id              |     int       | A primary key is a field or set of fields that uniquely identifies each row in the table. It's recorded as a list of strings, since it is possible to define the primary key as made up of several columns.                           |
+|   region          |     text      | It describes the geographical scope of the dataset.                           |
+|   year            |     int       | It describes the time frame of the dataset.                           |
+|   timeindex start      |     [timestamp](https://www.postgresql.org/docs/9.5/datatype-datetime.html)          | Both date and time, with time zone.                           |
+|   timeindex stop       |     [timestamp](https://www.postgresql.org/docs/9.5/datatype-datetime.html)   | Both date and time, with time zone.                           |
+|   timeindex resolution |     [intervall](https://www.postgresql.org/docs/9.5/datatype-datetime.html)          | The time span between individual points of information in a time series.                           |
+|   series1         |     float array  | First column for series input (unlimited additional series columns can be added)                          |
+|   series2         |     float array  | Second Column for series input (unlimited additional series columns can be added)                           |
+|   version         |     json       | It describes the version of the values in the parameter columns.                           |
+|   method          |     json      | It describes the procedure for obtaining the value, in case it does not originate from a single source.                           |
+|   source          |     json      | Human readable title of the source, e.g. document title or organisation name. The source must relate to a source provided in the oemetadata (datapackage) file.                           |
+|   comment         |     json      | Free text comment on what's been done.  
+
+For more information see: timeseries [datapackage](https://github.com/sedos-project/oedatamodel/blob/main/extended_datamodel/datamodel_timeseries.json)
+
+
+### OEDataModel-concrete/normalization
+
 The following examples are intended to provide a simple example table as well as a detailed descriptoion on each field/column. For completeness we also link to the datapacke examples which are already provided as file. 
 
 **Since we offer two data model variants with almost identical field names, we provide a description that applies to both variants.**
@@ -115,6 +162,10 @@ Origin data model: [OEDataModel-concrete](https://github.com/OpenEnergyPlatform/
 
 
 ### Scalar description
+
+Todo's: 
+* add bandwidth, version columns and explanations
+* make value column of type: float array
 
 | **Field**              |  **Datatype** | **Description**            |
 |------------------------|---------------|----------------------------|
