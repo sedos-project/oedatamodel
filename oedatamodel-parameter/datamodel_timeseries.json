@@ -1,6 +1,6 @@
 {
   "name": "Parameter Datamodel",
-  "title": "SEDOS datamodel for secondary input scalars",
+  "title": "SEDOS datamodel for secondary input timeseries",
   "id": null,
   "description": "datamodel, metadata and examples provided as datapackage",
   "language": ["en-GB"],
