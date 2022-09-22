@@ -109,7 +109,7 @@ In short:
 |   source          |     json      | Human readable title of the source, e.g. document title or organisation name. The source must relate to a source provided in the oemetadata (datapackage) file.                           |
 |   comment         |     json      | Free text comment on what's been done.  
 
-For more information see: scalar [datapackage](https://github.com/sedos-project/oedatamodel/blob/main/extended_datamodel/datamodel_scalars.json)
+For more information see: scalar [datapackage](https://github.com/sedos-project/oedatamodel/blob/main/oedatamodel-parameter/datamodel_scalars.json)
 
 ### Example table:
 
@@ -139,7 +139,7 @@ For more information see: scalar [datapackage](https://github.com/sedos-project/
 |   source          |     json      | Human readable title of the source, e.g. document title or organisation name. The source must relate to a source provided in the oemetadata (datapackage) file.                           |
 |   comment         |     json      | Free text comment on what's been done.  
 
-For more information see: timeseries [datapackage](https://github.com/sedos-project/oedatamodel/blob/main/extended_datamodel/datamodel_timeseries.json)
+For more information see: timeseries [datapackage](https://github.com/sedos-project/oedatamodel/blob/main/oedatamodel-parameter/datamodel_timeseries.json)
 
 ### Example table:
 
