@@ -104,7 +104,7 @@ In short:
 |   parameter1      |     float array| First column for parameter input (unlimited additional parameter columns can be added)                          |
 |   parameter2      |     float array| Second Column for parameter input (unlimited additional parameter columns can be added)                           |
 |   bandwidth_type  |     json       | It describes the bandwidths type of the values in the parameter columns.                           |
-|   version         |     json       | It describes the version of the values in the parameter columns.                           |
+|   version         |     text       | It describes the version of the values in the parameter columns.                           |
 |   method          |     json      | It describes the procedure for obtaining the value, in case it does not originate from a single source.                           |
 |   source          |     json      | Human readable title of the source, e.g. document title or organisation name. The source must relate to a source provided in the oemetadata (datapackage) file.                           |
 |   comment         |     json      | Free text comment on what's been done.  
@@ -134,7 +134,7 @@ For more information see: scalar [datapackage](https://github.com/sedos-project/
 |   timeindex resolution |     [intervall](https://www.postgresql.org/docs/9.5/datatype-datetime.html)          | The time span between individual points of information in a time series.                           |
 |   series1         |     float array  | First column for series input (unlimited additional series columns can be added)                          |
 |   series2         |     float array  | Second Column for series input (unlimited additional series columns can be added)                           |
-|   version         |     json       | It describes the version of the values in the parameter columns.                           |
+|   version         |     text       | It describes the version of the values in the parameter columns.                           |
 |   method          |     json      | It describes the procedure for obtaining the value, in case it does not originate from a single source.                           |
 |   source          |     json      | Human readable title of the source, e.g. document title or organisation name. The source must relate to a source provided in the oemetadata (datapackage) file.                           |
 |   comment         |     json      | Free text comment on what's been done.  
