@@ -128,7 +128,6 @@ For more information see: scalar [datapackage](https://github.com/sedos-project/
 |-------------------|---------------|----------------------------|
 |   id              |     int       | A primary key is a field or set of fields that uniquely identifies each row in the table. It's recorded as a list of strings, since it is possible to define the primary key as made up of several columns.                           |
 |   region          |     text      | It describes the geographical scope of the dataset.                           |
-|   year            |     int       | It describes the time frame of the dataset.                           |
 |   timeindex start      |     [timestamp](https://www.postgresql.org/docs/9.5/datatype-datetime.html)          | Both date and time, with time zone.                           |
 |   timeindex stop       |     [timestamp](https://www.postgresql.org/docs/9.5/datatype-datetime.html)   | Both date and time, with time zone.                           |
 |   timeindex resolution |     [intervall](https://www.postgresql.org/docs/9.5/datatype-datetime.html)          | The time span between individual points of information in a time series.                           |
