@@ -1,20 +1,25 @@
 {
-  "name": "Parameter Datamodel",
-  "title": "SEDOS datamodel for secondary input scalars",
+  "name": null,
+  "title": null,
   "id": null,
-  "description": "datamodel, metadata and examples provided as datapackage",
+  "description": null,
   "language": ["en-GB"],
-  "subject": [],
-  "keywords": ["datamodel", "datapackage", "general energy dataformat"],
-  "publicationDate": "2022-07-13",
+  "subject": [
+        {
+            "name": null,
+            "path": null
+        }
+  ],
+  "keywords": ["SEDOS","oedatamodel-parameter"],
+  "publicationDate": null,
   "context": {
     "homepage": "https://sedos-project.github.io/.github/",
     "documentation": "https://sedos-project.github.io/.github/",
-    "sourceCode": "https://github.com/sedos-project/oedatamodel/tree/main/parameter_datamodel",
+    "sourceCode": "https://github.com/sedos-project",
     "contact": null,
     "grantNo": null,
-    "fundingAgency": null,
-    "fundingAgencyLogo": null,
+    "fundingAgency": "Bundesministerium für Wirtschaft und Klimaschutz (BMWK)",
+    "fundingAgencyLogo": "https://en.wikipedia.org/wiki/Federal_Ministry_for_Economic_Affairs_and_Climate_Action#/media/File:BMWi_Logo_2021.svg",
     "publisherLogo": null
   },
   "spatial": {
@@ -24,13 +29,20 @@
   },
   "temporal": {
     "referenceDate": null,
-    "timeseries": []
+    "timeseries": [
+            {
+                "start": null,
+                "end": null,
+                "resolution": null,
+                "alignment": null,
+                "aggregationType": null
+            }]
   },
   "sources": [
     {
-      "title": "Parameter datamodel",
+      "title": "OEDatamodel-parameter",
       "description": "Parameter data model for secondary input scalars and timeseries",
-      "path": "https://github.com/sedos-project/oedatamodel/tree/main/parameter_datamodel",
+      "path": "https://github.com/sedos-project/oedatamodel/tree/main/oedatamodel-parameter",
       "licenses": [
         {
           "name": "CC0-1.0",
@@ -40,18 +52,45 @@
           "attribution": "© Reiner Lemoine Institut"
         }
       ]
+    },
+    {
+            "title": null,
+            "description": null,
+            "path": null,
+            "licenses": [
+                {
+                    "name": null,
+                    "title": null,
+                    "path": null,
+                    "instruction": null,
+                    "attribution": null
+                }
+            ]
     }
   ],
-  "licenses": [],
+  "licenses": [
+        {
+          "name": "CC0-1.0",
+          "title": "Creative Commons Zero v1.0 Universal",
+          "path": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+          "instruction": "You are free: To Share, To Create, To Adapt",
+          "attribution": null
+        }
+  ],
   "contributors": [
-    {"title": "henhuy", "email": null, "date": "2022-07-13", "object": "datapackage", "comment": "Create template datapackage for extended datamodel"},
-    {"title": "chrwm", "email": null, "date": "2022-07-28", "object": "datapackage", "comment": "Rename datamodel"}
+        {
+            "title": null,
+            "email": null,
+            "date": null,
+            "object": null,
+            "comment": null
+        }
   ],
   "resources": [
     {
-      "profile": "tabular-data-resource",
-      "name": "model_draft.sedos_parameter_scalars",
-      "path": "https://openenergy-platform.org/dataedit/view/model_draft/sedos_parameter_scalars",
+      "profile": null,
+      "name": null,
+      "path": null,
       "format": "PostgreSQL",
       "encoding" : "UTF-8",
       "schema": {
@@ -77,7 +116,7 @@
     }
   ],
   "@id": null,
-  "@context": null,
+  "@context": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/develop/metadata/latest/context.json",
   "review": {
     "path": null,
     "badge": null
