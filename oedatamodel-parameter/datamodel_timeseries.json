@@ -88,7 +88,7 @@
   ],
   "resources": [
     {
-      "profile": null,
+      "profile": "tabular-data-resource",
       "name": null,
       "path": null,
       "format": "PostgreSQL",
