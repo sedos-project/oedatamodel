@@ -28,9 +28,9 @@
   },
   "sources": [
     {
-      "title": "Parameter datamodel",
+      "title": "OEDatamodel-parameter",
       "description": "Parameter data model for secondary input scalars and timeseries",
-      "path": "https://github.com/sedos-project/oedatamodel/tree/main/parameter_datamodel",
+      "path": "https://github.com/sedos-project/oedatamodel/tree/main/oedatamodel-parameter",
       "licenses": [
         {
           "name": "CC0-1.0",
