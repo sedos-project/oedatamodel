@@ -130,7 +130,7 @@ For more information see: scalar [datapackage](https://github.com/sedos-project/
 |   region          |     text      | It describes the geographical scope of the dataset.                           |
 |   timeindex start      |     [timestamp](https://www.postgresql.org/docs/9.5/datatype-datetime.html)          | Both date and time, with time zone.                           |
 |   timeindex stop       |     [timestamp](https://www.postgresql.org/docs/9.5/datatype-datetime.html)   | Both date and time, with time zone.                           |
-|   timeindex resolution |     [intervall](https://www.postgresql.org/docs/9.5/datatype-datetime.html)          | The time span between individual points of information in a time series.                           |
+|   timeindex resolution |     [interval](https://www.postgresql.org/docs/9.5/datatype-datetime.html)          | The time span between individual points of information in a time series.                           |
 |   series1         |     float array  | First column for series input (unlimited additional series columns can be added)                          |
 |   series2         |     float array  | Second Column for series input (unlimited additional series columns can be added)                           |
 |   version         |     text       | It describes the version of the values in the parameter columns.                           |
@@ -253,7 +253,7 @@ Todo's:
 |   technology type      |     text      | Is used to specify the technology field. The specification can be technological, or freely user-defined, based on the requirements of the model.                           |
 |   timeindex start      |     [timestamp](https://www.postgresql.org/docs/9.5/datatype-datetime.html)          | Both date and time, with time zone.                           |
 |   timeindex stop       |     timestamp | Both date and time, with time zone.                           |
-|   timeindex resolution |     [intervall](https://www.postgresql.org/docs/9.5/datatype-datetime.html)          | The time span between individual points of information in a time series.                           |
+|   timeindex resolution |     [interval](https://www.postgresql.org/docs/9.5/datatype-datetime.html)          | The time span between individual points of information in a time series.                           |
 |   series               |     [decimal] | Series of values, from start to stop with a step size of stepvalues.                           |
 |   unit                 |     text      | Indicates the measuring unit of a value.                           |
 |   tags                 |     json      | Is used to further describe a timeseries.                           |
