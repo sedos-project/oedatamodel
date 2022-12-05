@@ -98,9 +98,9 @@ In short:
 
 | **Field**         |  **Datatype** | **Description**            |
 |-------------------|---------------|----------------------------|
-|   id              |     int       | A primary key is a field or set of fields that uniquely identifies each row in the table. It's recorded as a list of strings, since it is possible to define the primary key as made up of several columns.                           |
+|   id              |     integer       | A primary key is a field or set of fields that uniquely identifies each row in the table. It's recorded as a list of strings, since it is possible to define the primary key as made up of several columns.                           |
 |   region          |     text      | It describes the geographical scope of the dataset.                           |
-|   year            |     int       | It describes the time frame of the dataset.                           |
+|   year            |     integer       | It describes the time frame of the dataset.                           |
 |   parameter1      |     float array| First column for parameter input (unlimited additional parameter columns can be added)                          |
 |   parameter2      |     float array| Second Column for parameter input (unlimited additional parameter columns can be added)                           |
 |   bandwidth_type  |     json       | It describes the bandwidths type of the values in the parameter columns.                           |
@@ -126,7 +126,7 @@ For more information see: scalar [datapackage](https://github.com/sedos-project/
 
 | **Field**         |  **Datatype** | **Description**            |
 |-------------------|---------------|----------------------------|
-|   id              |     int       | A primary key is a field or set of fields that uniquely identifies each row in the table. It's recorded as a list of strings, since it is possible to define the primary key as made up of several columns.                           |
+|   id              |     integer       | A primary key is a field or set of fields that uniquely identifies each row in the table. It's recorded as a list of strings, since it is possible to define the primary key as made up of several columns.                           |
 |   region          |     text      | It describes the geographical scope of the dataset.                           |
 |   timeindex start      |     [timestamp](https://www.postgresql.org/docs/9.5/datatype-datetime.html)          | Both date and time, with time zone.                           |
 |   timeindex stop       |     [timestamp](https://www.postgresql.org/docs/9.5/datatype-datetime.html)   | Both date and time, with time zone.                           |
@@ -189,10 +189,10 @@ Origin data model: [OEDataModel-concrete](https://github.com/OpenEnergyPlatform/
 
 | **Field**         |  **Datatype** | **Description**            |
 |-------------------|---------------|----------------------------|
-|   scenario id     |     int       | A primary key is a field or set of fields that uniquely identifies each row in the table. It's recorded as a list of strings, since it is possible to define the primary key as made up of several columns.                           |
+|   scenario id     |     integer      | A primary key is a field or set of fields that uniquely identifies each row in the table. It's recorded as a list of strings, since it is possible to define the primary key as made up of several columns.                           |
 |   scenario        |     text      | Name of the scenario.                           |
 |   region          |     json      | It describes the geographical scope of the dataset.                           |
-|   year            |     int       | It describes the time frame of the dataset.                           |
+|   year            |     integer       | It describes the time frame of the dataset.                           |
 |   source          |     text      | Human readable title of the source, e.g. document title or organisation name. The source must relate to a source provided in the oemetadata (datapackage) file.                           |
 |   comment         |     text      | Free text comment on what's been done.                           |
 
@@ -214,8 +214,8 @@ Todo's:
 
 | **Field**              |  **Datatype** | **Description**            |
 |------------------------|---------------|----------------------------|
-|   scalar id            |      int      | A primary key is a field or set of fields that uniquely identifies each row in the table. It's recorded as a list of strings, since it is possible to define the primary key as made up of several columns.                           |
-|   scenario id          |      int      | A foreign key is a field that refers to a primary key column in another table.                           |
+|   scalar id            |      integer      | A primary key is a field or set of fields that uniquely identifies each row in the table. It's recorded as a list of strings, since it is possible to define the primary key as made up of several columns.                           |
+|   scenario id          |      integer      | A foreign key is a field that refers to a primary key column in another table.                           |
 |   region               |      json     | It describes the area name in which a scalar operates.                           |
 |   input energy vector  |      text     | It describes any type of energy or energy carrier (e.g. electricity, heat, solar radiation, natural gas, ...) that enters a technology.                           |
 |   output energy vector |      text     | It describes any type of energy or energy carrier (e.g. electricity, heat, hydrogen, LNG, CO2, ...) that exits a technology.                           |
@@ -243,8 +243,8 @@ Todo's:
 
 | **Field**              |  **Datatype** | **Description**            |
 |------------------------|---------------|----------------------------|
-|   timeseries id        |     int       | A primary key is a field or set of fields that uniquely identifies each row in the table. It's recorded as a list of strings, since it is possible to define the primary key as made up of several columns.                           |
-|   scenario id          |     int       | A foreign key is a field that refers to a primary key column in another table.                           |
+|   timeseries id        |     integer       | A primary key is a field or set of fields that uniquely identifies each row in the table. It's recorded as a list of strings, since it is possible to define the primary key as made up of several columns.                           |
+|   scenario id          |     integer       | A foreign key is a field that refers to a primary key column in another table.                           |
 |   region               |     json      | It describes the area name in which a timeseries operates.                           |
 |   input energy vector  |     text      | It describes any type of energy or energy carrier (e.g. electricity, heat, solar radiation, natural gas, ...) that enters a technology.                           |
 |   output energy vector |     text      | It describes any type of energy or energy carrier (e.g. electricity, heat, hydrogen, LNG, CO2, ...) that exits a technology.                           |
