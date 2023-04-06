@@ -10,7 +10,7 @@
             "path": null
         }
   ],
-  "keywords": ["SEDOS","oedatamodel-parameter"],
+  "keywords": ["SEDOS","oedatamodel-parameter", "input_data"],
   "publicationDate": null,
   "context": {
     "homepage": "https://sedos-project.github.io/.github/",
@@ -45,11 +45,11 @@
       "path": "https://github.com/sedos-project/oedatamodel/tree/main/oedatamodel-parameter",
       "licenses": [
         {
-          "name": "CC0-1.0",
-          "title": "Creative Commons Zero v1.0 Universal",
-          "path": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
-          "instruction": "You are free: To Share, To Create, To Adapt",
-          "attribution": "© Reiner Lemoine Institut"
+          "name": null,
+          "title": null,
+          "path": null,
+          "instruction": null,
+          "attribution": null
         }
       ]
     },
