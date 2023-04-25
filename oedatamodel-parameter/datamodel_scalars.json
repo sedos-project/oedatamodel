@@ -45,10 +45,10 @@
       "path": "https://github.com/sedos-project/oedatamodel/tree/main/oedatamodel-parameter",
       "licenses": [
         {
-          "name": null,
-          "title": null,
-          "path": null,
-          "instruction": null,
+          "name": "CC0-1.0",
+          "title": "Creative Commons Zero v1.0 Universal",
+          "path": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+          "instruction": "You are free: To Share, To Create, To Adapt",
           "attribution": null
         }
       ]
@@ -70,10 +70,10 @@
   ],
   "licenses": [
         {
-          "name": "CC0-1.0",
-          "title": "Creative Commons Zero v1.0 Universal",
-          "path": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
-          "instruction": "You are free: To Share, To Create, To Adapt",
+          "name": null,
+          "title": null,
+          "path": null,
+          "instruction": null,
           "attribution": null
         }
   ],
