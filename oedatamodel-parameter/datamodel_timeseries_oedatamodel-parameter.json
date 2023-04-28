@@ -53,7 +53,8 @@
   ],
   "contributors": [
     {"title": "henhuy", "email": null, "date": "2022-07-13", "object": "datapackage", "comment": "Create template datapackage for extended datamodel"},
-    {"title": "chrwm", "email": null, "date": "2022-07-28", "object": "datapackage", "comment": "Rename datamodel"}
+    {"title": "chrwm", "email": null, "date": "2022-07-28", "object": "datapackage", "comment": "Rename datamodel"},
+    {"title": "chrwm", "email": null, "date": "2023-04-28", "object": "datapackage", "comment": "Add type column"}
   ],
   "resources": [
     {
@@ -66,6 +67,7 @@
         "fields": [
           {"name": "id", "description": "Unique identifier", "type": "bigint", "unit": null, "isAbout": [], "valueReference": []},
           {"name": "region", "description": "Country or regionx", "type": "text", "unit": null, "isAbout": [], "valueReference": []},
+          {"name": "type", "description": "Type of process", "type": "text", "unit": null, "isAbout": [], "valueReference": []},
           {"name": "timeindex_start", "description": "Start timestamp", "type": "timestamp", "unit": null, "isAbout": [], "valueReference": []},
           {"name": "timeindex_stop", "description": "Stop timestamp", "type": "timestamp", "unit": null, "isAbout": [], "valueReference": []},
           {"name": "timeindex_resolution", "description": "Timesteps", "type": "interval", "unit": null, "isAbout": [], "valueReference": []},

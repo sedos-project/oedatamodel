@@ -98,6 +98,7 @@
           {"name": "id", "description": "Unique identifier", "type": "bigint", "unit": null, "isAbout": [], "valueReference": []},
           {"name": "region", "description": "Country or regionx", "type": "text", "unit": null, "isAbout": [], "valueReference": []},
           {"name": "year", "description": "Year", "type": "integer", "unit": "a", "isAbout": [], "valueReference": []},
+          {"name": "type", "description": "Type of process", "type": "text", "unit": null, "isAbout": [], "valueReference": []},
           {"name": "parameter1", "description": "Parameter #1", "type": "float array", "unit": null, "isAbout": [], "valueReference": []},
           {"name": "parameter2", "description": "Parameter #2", "type": "float array", "unit": null, "isAbout": [], "valueReference": []},
           {"name": "bandwidth_type", "description": "Bandwidth Type", "type": "json", "unit": null, "isAbout": [], "valueReference": []},

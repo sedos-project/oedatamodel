@@ -1,1 +1,1 @@
-id;region;timeindex_start;timeindex_stop;timeindex_resolution;series1;series2;version;method;source;comment
+id;region;type;timeindex_start;timeindex_stop;timeindex_resolution;series1;series2;version;method;source;comment
