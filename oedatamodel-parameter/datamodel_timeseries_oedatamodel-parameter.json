@@ -66,7 +66,7 @@
       "schema": {
         "fields": [
           {"name": "id", "description": "Unique identifier", "type": "bigint", "unit": null, "isAbout": [], "valueReference": []},
-          {"name": "region", "description": "Country or regionx", "type": "text", "unit": null, "isAbout": [], "valueReference": []},
+          {"name": "region", "description": "Country or region", "type": "text", "unit": null, "isAbout": [], "valueReference": []},
           {"name": "type", "description": "Type of process", "type": "text", "unit": null, "isAbout": [], "valueReference": []},
           {"name": "timeindex_start", "description": "Start timestamp", "type": "timestamp", "unit": null, "isAbout": [], "valueReference": []},
           {"name": "timeindex_stop", "description": "Stop timestamp", "type": "timestamp", "unit": null, "isAbout": [], "valueReference": []},
