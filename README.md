@@ -181,8 +181,8 @@ For more information see: timeseries [datapackage](https://github.com/sedos-proj
 | standard_deviation     | Standard deviation                                                                                                                                                                  | NetCDF_v1.9 |
 | sum_of_squares         | Sum of squares                                                                                                                                                                      | NetCDF_v1.9 |
 | variance               | Variance                                                                                                                                                                            | NetCDF_v1.9 |
-| 1_sigma                | example of SEDOS-specific cell method                                                                                                                                               | SEDOS       |
-| gauss                  | example of SEDOS-specific cell method                                                                                                                                               | SEDOS       |
+| values                 | The bandwidth data should be interpreted as list of single values                                                                                                                   | SEDOS       |
+
 
 
 ### OEDataModel-concrete/normalization
